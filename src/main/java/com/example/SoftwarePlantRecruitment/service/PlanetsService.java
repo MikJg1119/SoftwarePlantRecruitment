@@ -8,5 +8,4 @@ public interface PlanetsService {
     void deletePlanet(long id);
     void deleteAllPlanets();
     Planet getPlanetDetailsFromAPI(String apiLink);
-//    List<Planet> getPlanetsByName(String name);
 }

@@ -51,10 +51,7 @@ public class PlanetServiceImpl implements PlanetsService{
         return planet;
     }
 
-//    @Override
-//    public List<Planet> getPlanetsByName(String name) {
-//        return planetsRepository.getPlanetsByPlanet_name(name);
-//    }
+
 
     @Override
     public Planet getPlanetDetailsFromAPI(String apiLink) {

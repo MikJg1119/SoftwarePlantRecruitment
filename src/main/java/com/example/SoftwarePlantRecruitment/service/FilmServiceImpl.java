@@ -56,35 +56,6 @@ public class FilmServiceImpl implements FilmsService{
         filmsRepository.deleteAll();
     }
 
-//    public List<Film> queryFilmByCharacterName(String name){
-//        List<Film> films =  filmsRepository.findAll();
-//        List<Character> characters = characterSerivce.getCharacterByName(name);
-//        List<Film> listOfFilmsContainingCharacter = new ArrayList<Film>();
-//        for (Film film : films){
-//           List<Character> cast = film.getCast();
-//           for (Character character : characters) {
-//               if (cast.contains(character)) {
-//                   listOfFilmsContainingCharacter.add(film);
-//               }
-//           }
-//        }
-//        return listOfFilmsContainingCharacter;
-//    }
-//    public List<Film> queryFilmByPlanetName(String name){
-//        List<Film> films = filmsRepository.findAll();
-//        List<Planet> allPlanetsContainingName = planetService.getPlanetsByName(name);
-//        List<Film> listOfFilmsContainingPlanet = new ArrayList<>();
-//        for(Film film : films){
-//            List<Planet> planets = film.getPlanets();
-//            for (Planet planet : allPlanetsContainingName){
-//                if (planets.contains(planet)){
-//                    listOfFilmsContainingPlanet.add(film);
-//                }
-//            }
-//        }
-//
-//        return listOfFilmsContainingPlanet;
-//    }
 
     private Film getFilmDetailsFromApi(Film film, long id){
         String urlBuild = "http://localhost:8080/api/films/"+id;

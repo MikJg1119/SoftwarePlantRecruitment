@@ -7,7 +7,5 @@ public interface FilmsService {
     void addFilm(Film film);
     void deleteFilm(long id);
     void deleteAllFilms();
-//    List<Film> queryFilmByPlanetName(String planet);
-//    List<Film> queryFilmByCharacterName(String planet);
     Film getFilmDetailsFromApi(String apiLink);
 }
